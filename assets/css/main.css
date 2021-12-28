@@ -1,0 +1,146 @@
+.app {
+    margin-left: -8px;
+    margin-top: -8px;
+    width: 102%;
+    
+}
+
+.container__body-hust {
+    height: 82vh;
+}
+
+.hust__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -188px;
+    width: 100%;
+    z-index: -1;
+    height: 106vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.container__body-support h1 {
+    color: #393636;
+    position: relative;
+    margin: 30px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline solid #393636;
+}
+
+.body__support {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.header {
+    height: var(--header-height);
+    width: 100%;
+    background: transparent;
+    background-image: url(/images/newPage/background-header.png);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: contain;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+    background-image: url(https://qldt.hust.edu.vn/images/newPage/background-header.png);
+}
+
+.header__navbar {
+    display: flex;
+    width: 1140px;
+    justify-content: space-between;
+}
+
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 4px 0 0 0;
+    display: flex;
+}
+
+.header__logo-img {
+    width: 55px;
+    height: 83px;
+}
+
+.header__navbar-item--name {
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.header__navbar-item--name p:last-child {
+    font-size: 1.5rem;
+    margin-top: -8px;
+}
+
+.header__button-login {
+    height: 32px;
+    width: 146px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin: auto;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: #c02135;
+    padding: 12px 15px;
+}
+
+.header__button-login a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.header__panel {
+    display: flex;
+}
+
+.header__panel-option {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.header__panel-option--btn {
+    height: 44px;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 12px 15px;
+}
+
+.header__panel-option--btn:hover {
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: #b23a3c;
+}
+
+.footer img {
+    width: 100%;
+}
+
+.home__img {
+    width: 100%;
+}
+
+
+    
+
+
