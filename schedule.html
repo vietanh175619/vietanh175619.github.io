@@ -65,48 +65,62 @@
 
         <div class="container">
             <div class="wrap">
-                <div class="project">
-                    <p class="project__heading">Thông tin phân công các môn Đồ án</p>
-                    <div class="project__info">
+                <div class="schedule">
+                    <!-- Search -->
+                    <div class="schedule__search">
+                        <div class="schedule__search-input-wrap">
+                            <input type="text" class="schedule__search-input" placeholder="Nhập mã lớp, mã môn hoặc tên môn">
+                        </div>
+                        <!-- <span class="schedule__search-select">
+                            <span class="schedule__search-select-label">Kỳ học</span>
+                                <i class="schedule__search-select-icon fas fa-angle-down"></i>
+                            
+                                <ul class="schedule__search-option">
+                                    <li class="schedule__search-option-item schedule__search-option-item--active">
+                                        <span>20201</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                    <li class="schedule__search-option-item">
+                                        <span>20202</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div> -->
+                    </div>
+
+                    <!-- Table -->
+                    <p class="schedule__heading">Thời khóa biểu</p>
+                    <div class="schedule__info">
                         <ul>
                             <li class="category">
                                 <p class="category__num">STT</p>
-                                <p class="category__sem">Kỳ</p>
-                                <p class="category__classId">Mã lớp/HP</p>
-                                <p class="category__projectName">Tên học phần</p>
-                                <p class="category__projectDetail">Tên đề tài</p>
-                                <p class="category__grade">Điểm (QT/CK)</p>
-                                <p class="category__teacher">GVHD</p>
+                                <p class="category__sub">Học phần</p>
+                                <p class="category__type">Hình thức GD</p>
+                                <p class="category__grade">Điểm</p>
+                                <p class="category__time">Lịch học</p>
+                                <p class="category__absent">Vắng</p>
+                                <p class="category__teach">Giảng viên</p>
                             </li>
 
                             <li class="first-project">
                                 <p class="project__num">1</p>
-                                <p class="project__sem">20201</p>
-                                <p class="project__classId">707926 (IT3940)</p>
-                                <p class="project__projectName">Project I</p>
-                                <p class="project__projectDetail">Đề tài 1</p>
-                                <p class="project__grade">3 / 8</p>
-                                <p class="project__teacher">Nguyễn Dương</p>
+                                <p class="project__sub">Giải tích 1</p>
+                                <p class="project__type">Offline</p>
+                                <p class="project__grade">9</p>
+                                <p class="project__time">Sáng T5 Tuần 1-8</p>
+                                <p class="project__absent">1</p>
+                                <p class="project__teach">Nguyễn Dương</p>
                             </li>
 
                             <li class="first-project">
                                 <p class="project__num">2</p>
-                                <p class="project__sem">20202</p>
-                                <p class="project__classId">707927 (IT3941)</p>
-                                <p class="project__projectName">Project I</p>
-                                <p class="project__projectDetail">Đề tài 2</p>
-                                <p class="project__grade">7 / 8</p>
-                                <p class="project__teacher">Trần Văn Nam</p>
-                            </li>
-
-                            <li class="first-project">
-                                <p class="project__num">3</p>
-                                <p class="project__sem">20212</p>
-                                <p class="project__classId">707928 (IT3943)</p>
-                                <p class="project__projectName">Project I</p>
-                                <p class="project__projectDetail">Đề tài 3</p>
-                                <p class="project__grade">9 / 9</p>
-                                <p class="project__teacher">Nguyễn Phương Linh</p>
+                                <p class="project__sub">Giải tích 2</p>
+                                <p class="project__type">Offline</p>
+                                <p class="project__grade">8</p>
+                                <p class="project__time">Chiều T5 Tuần 1-8</p>
+                                <p class="project__absent">0</p>
+                                <p class="project__teach">Trần Văn Nam</p>
                             </li>
                         </ul>
                     </div>
