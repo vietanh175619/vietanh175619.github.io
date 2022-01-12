@@ -8,6 +8,58 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Năm', 'CPA', 'GPA'],
+          ['2017',  1.6,      1.8],
+          ['2018',  1.8,      1.9],
+          ['2019',  2.0,      2.5],
+          ['2020',  2.5,      3.0],
+        ]);
+
+        var options = {
+          title : 'Biểu đồ học tập',
+          vAxis: {title: 'TC tích lũy'},
+          hAxis: {title: 'Năm'},
+          seriesType: 'bars',
+          series: {2: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Năm', 'Điểm rèn luyện'],
+        ['2017',  60],
+        ['2018',  80],
+        ['2019',  75],
+        ['2020',  95]
+      ]);
+
+      var options = {
+        title: 'Điểm rèn luyện',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+      chart.draw(data, options);
+    }
+  </script>
 </head>
 <body>
     <div class="app">
@@ -26,9 +78,9 @@
                     </li>
                 </ul>
 
-                <ul class="header__navbar-list">
-                    <div class="header__time">
-                        <p>Tuần 16 (Tuần học thứ 16): 10/01 - 15/01 </p>
+                <ul class="header__navbar-list header__navbar-list--user">
+                    <div class="header__welcome">
+                        <p>Xin chào,</p>
                     </div>
                     <div class="header__user">
                         <a href="#" class="header__user-avatar">
@@ -80,18 +132,13 @@
         </div>
 
         <div class="container">
-            <div class="register-wrap">
-                <div class="register-form">
-                    <p class="register__heading">Đăng ký nguyện vọng kỳ 20211</p>
-                    
-                    <ul class="register__note">
-                        <li>Lưu ý:</li>
-                        <li>1. Tra cứu Danh sách Đề tại Tại đây.</li>
-                        <li>2. Chức năng này chỉ hỗ trợ đăng ký nguyện vọng/GVHD, SV phải hoàn thành đăng ký Học phần tương ứng trên Hệ thống SIS.</li>
-                        <li>3. Các GV/DN đã nhận đủ số lượng, hoặc không có nhu cầu nhận SV, sẽ không hiển thị trong Danh sách đăng ký.</li>
-                    </ul>
+            <div class="profile-wrap">
+                <div class="profile-form">
+                    <p class="profile__heading">Thông tin cá nhân sinh viên</p>
 
-                    <img src="./assets/img/register.PNG" alt="/" class="register-img">
+                    <img src="./assets/img/profile.PNG" alt="/" class="profile-img">
+                    <div id="chart_div" style="width: auto; height: 400px;"></div>
+                    <div id="curve_chart" style="width: auto; height: 400px"></div>
                 </div>
             </div>
         </div>

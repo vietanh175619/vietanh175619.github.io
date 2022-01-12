@@ -33,6 +33,10 @@ body {
     display: flex;
 }
 
+.header__navbar-list--user {
+    flex-direction: column;
+}
+
 .header__logo-img {
     width: 55px;
     height: 83px;
@@ -60,6 +64,15 @@ body {
 .header__time {
     color: var(--white-color);
     font-size: 1.4rem;
+}
+
+.header__welcome {
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.header__welcome p {
+    margin: 12px 0 6px 12px;
 }
 
 .header__user {
@@ -397,6 +410,65 @@ body {
     height: 680px;
     width: auto;
     margin-left: 22px;
+    cursor: text;
+}
+
+/* profile */
+.profile-wrap {
+    width: 90%;
+    height: 1600px;
+    background-color: var(--white-color);
+    margin: 0 76px 0;
+}
+
+.profile-form {
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.profile__heading {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.profile-img {
+    height: auto;
+    width: 100%;
+    cursor: text;
+}
+
+/* service */
+.service-wrap {
+    width: 90%;
+    height: 800px;
+    background-color: var(--white-color);
+    margin: 0 76px 0;
+}
+
+.service-form {
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.service__heading {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.service-img {
+    height: auto;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* container */
